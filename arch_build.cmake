@@ -14,7 +14,6 @@ set(HUFF_APP_PLATFORM_CONFIG_FILE_LIST
   huff_app_platform_cfg.h
   huff_app_perfids.h
   huff_app_msgids.h
-  #huff_app_msgstruct.h
 )
 
 # Create wrappers around the all the config header files
