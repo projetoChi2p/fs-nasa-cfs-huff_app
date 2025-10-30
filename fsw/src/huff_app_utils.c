@@ -65,11 +65,11 @@ void HUFF_APP_GetCrc(const char *TableName)
     status = CFE_TBL_GetInfo(&TblInfoPtr, TableName);
     if (status != CFE_SUCCESS)
     {
-        CFE_ES_WriteToSysLog("Sample App: Error Getting Example Table Info");
+        CFE_ES_WriteToSysLog("HUFF App: Error Getting Example Table Info");
     }
     else
     {
         Crc = TblInfoPtr.Crc;
-        CFE_ES_WriteToSysLog("Sample App: CRC: 0x%08lX\n\n", (unsigned long)Crc);
+        CFE_ES_WriteToSysLog("HUFF App: CRC: 0x%08lX\n\n", (unsigned long)Crc);
     }
 }
